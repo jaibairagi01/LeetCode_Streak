@@ -1,3 +1,4 @@
+#Approach 1:
 class Solution {
 public:
     int numberOfMatches(int n) {
@@ -6,5 +7,13 @@ public:
             return n/2 + numberOfMatches(n/2);
         else
             return (n-1)/2 + numberOfMatches((n-1)/2 + 1);
+    }
+};
+
+#Approach 2:
+class Solution {
+public:
+    int numberOfMatches(int n) {
+       return n-1;
     }
 };
